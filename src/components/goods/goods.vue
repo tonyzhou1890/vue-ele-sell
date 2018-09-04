@@ -114,7 +114,7 @@ export default {
     food
   },
   created() {
-    this.$axios.get('/static/data.json').then((res) => {
+    this.$axios.get('./static/data.json').then((res) => {
       let data = res.data;
       this.goods = data.goods;
       this.$nextTick(() => {

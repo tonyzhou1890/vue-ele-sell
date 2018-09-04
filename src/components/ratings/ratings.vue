@@ -131,7 +131,7 @@ export default {
     }
   },
   created() {
-    this.$axios.get('/static/data.json').then((res) => {
+    this.$axios.get('./static/data.json').then((res) => {
       console.log(res);
       let data = res.data;
       this.ratings = data.ratings;

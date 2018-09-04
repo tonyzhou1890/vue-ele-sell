@@ -39,7 +39,7 @@ export default {
     }
   },
   created() {
-    this.$axios.get('/static/data.json').then((res) => {
+    this.$axios.get('./static/data.json').then((res) => {
       let data = res.data;
       this.seller = Object.assign({},this.seller,data.seller);
       this.goods = data.goods;
